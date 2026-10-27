@@ -2,8 +2,8 @@
 
 A responsive, animated agricultural technology support website for explaining precision farming concepts, crop/weed detection workflows, and common website/API errors. Built for a Software Development final assessment.
 
-**Live website:** `ADD_YOUR_DEPLOYED_HTTPS_URL_HERE`  
-**GitHub repository:** `ADD_YOUR_GITHUB_REPOSITORY_URL_HERE`
+**Live website:** ` https://agritech-ai-help-portal.onrender.com/`  
+**GitHub repository:** ``
 
 > Do not submit the placeholders above. Replace them after deployment. Never commit `.env` or live API keys.
 
