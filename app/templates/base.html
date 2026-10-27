@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#102b20">
+  <meta name="description" content="AgriTech AI Help Portal for precision farming FAQs and error troubleshooting.">
+  <title>{% block title %}AgriTech AI Help Portal{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <header class="site-header">
+    <a class="brand" href="/"><span class="brand-mark">✳</span><span>Agri<span class="brand-light">Tech</span><small>FIELD SUPPORT INTELLIGENCE</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav id="mainNav"><a class="{% if page=='home' %}active{% endif %}" href="/">Overview</a><a class="{% if page=='faq' %}active{% endif %}" href="/faq">Knowledge base</a><a class="{% if page=='errors' %}active{% endif %}" href="/errors">Error library</a><a class="nav-cta" href="#assistant" data-open-chat>Ask AI <span>↗</span></a></nav>
+  </header>
+  <main>{% block content %}{% endblock %}</main>
+  <footer class="footer"><a class="brand footer-brand" href="/"><span class="brand-mark">✳</span><span>AgriTech<small>FIELD SUPPORT INTELLIGENCE</small></span></a><p>Practical knowledge for smarter, safer field technology.</p><div class="footer-links"><a href="/faq">FAQs</a><a href="/errors">Error codes</a><a href="/api/health" target="_blank">System health ↗</a></div><span class="copyright">© 2026 AgriTech AI Help Portal · Educational demo</span></footer>
+  <button class="chat-launcher" id="chatLauncher" aria-label="Open AI assistant"><span class="chat-pulse"></span><span class="launcher-icon">✳</span><span>Ask Agri AI</span><span class="launcher-arrow">↗</span></button>
+  <section class="chat-panel" id="chatPanel" aria-label="AgriTech AI assistant" aria-hidden="true">
+    <div class="chat-head"><div class="chat-avatar">✳</div><div><strong>Agri AI Assistant</strong><small><span class="online-dot"></span> Knowledge assistant · online</small></div><button id="chatClose" aria-label="Close chat">×</button></div>
+    <div class="chat-messages" id="chatMessages"><div class="message bot">Hi there! 🌱 I can help with crop detection, precision weeding, common error codes, and troubleshooting. What are you working on?</div></div>
+    <div class="quick-prompts"><button data-prompt="How can I improve detection accuracy?">Improve detection</button><button data-prompt="What does error 404 mean?">Explain 404</button></div>
+    <form id="chatForm" class="chat-form"><input id="chatInput" maxlength="2000" placeholder="Ask about crops, AI, or errors…" autocomplete="off" required><button aria-label="Send message">↑</button></form>
+    <div class="chat-foot">AI can be wrong. Verify advice before field operations.</div>
+  </section>
+  <script src="/static/app.js" defer></script>
+</body></html>

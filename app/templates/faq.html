@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}Knowledge Base — AgriTech AI{% endblock %}
+{% block content %}
+<section class="page-hero wrap"><div class="eyebrow"><span class="eyebrow-line"></span> THE KNOWLEDGE BASE</div><h1>Good questions.<br><em>Clear answers.</em></h1><p>Field-tested concepts and practical troubleshooting guidance for agricultural technology.</p><div class="page-meta"><span>12+ STARTING GUIDES</span><span>·</span><span>SEARCHABLE KNOWLEDGE</span></div></section>
+<section class="section wrap knowledge-layout"><aside class="knowledge-aside"><div class="aside-index">INDEX / 01</div><h3>Find your<br>next answer.</h3><p>Search by topic or browse the categories below. Answers load from the SQL database.</p><div class="category-list" id="faqCategories"><button class="category active" data-category="all">All topics <span>↗</span></button></div><div class="aside-note"><span>✳</span><p>Still stuck? Ask the assistant to find a useful next step.</p><button data-open-chat>Ask Agri AI ↗</button></div></aside>
+<div class="knowledge-main"><div class="search-bar"><span>⌕</span><input id="faqSearch" placeholder="Search questions, topics, keywords…" aria-label="Search FAQs"><kbd>/</kbd></div><div class="results-line"><span id="faqCount">Loading FAQs…</span><span>DATABASE / SQL</span></div><div id="faqList" class="faq-list"><div class="loading-card">Loading knowledge base…</div></div></div></section>
+{% endblock %}

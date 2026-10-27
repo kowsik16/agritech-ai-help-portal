@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}AgriTech AI — Field support, made clearer{% endblock %}
+{% block content %}
+<section class="hero wrap">
+  <div class="hero-copy reveal"><div class="eyebrow"><span class="eyebrow-line"></span> DIGITAL FIELD ASSISTANT <span class="eyebrow-pill">BETA 01</span></div>
+    <h1>Better decisions<br>start <em>in the field.</em></h1>
+    <p class="hero-desc">A practical knowledge companion for crop detection, precision weeding, and the technology powering smarter agriculture.</p>
+    <div class="hero-actions"><a class="btn btn-primary" href="/faq">Explore knowledge base <span>↗</span></a><button class="btn btn-ghost" data-open-chat><span class="play-icon">✳</span> Ask the AI assistant</button></div>
+    <div class="trust-row"><div class="avatar-stack"><span>🌾</span><span>🌱</span><span>🛰️</span></div><div><strong>Built for field problem-solving</strong><small>FAQs · Error guides · AI support</small></div></div>
+  </div>
+  <div class="hero-visual reveal">
+    <div class="visual-glow"></div><div class="visual-label"><span class="live-dot"></span> FIELD INTELLIGENCE / 001</div>
+    <div class="field-art"><div class="sun"></div><div class="field-hill hill-back"></div><div class="field-hill hill-front"></div>
+      <div class="crop-row row-one"><i>✳</i><i>✳</i><i>✳</i><i>✳</i></div><div class="crop-row row-two"><i>✳</i><i>✳</i><i>✳</i><i>✳</i></div><div class="crop-row row-three"><i>✳</i><i>✳</i><i>✳</i><i>✳</i></div>
+      <div class="scan-box scan-one"><span>CROP · 96%</span></div><div class="scan-box scan-two"><span>WEED · 88%</span></div><div class="scan-line"></div>
+    </div>
+    <div class="floating-card card-detection"><span class="mini-icon">⌁</span><div><small>VISION SYSTEM</small><strong>Crop & weed insights</strong></div><span class="status-check">✓</span></div>
+    <div class="floating-card card-weather"><span class="weather-icon">☀</span><div><small>FIELD CONDITIONS</small><strong id="weatherSummary">Forecast fallback ready</strong></div><button id="weatherRefresh" aria-label="Refresh weather">↻</button></div>
+    <div class="visual-foot"><span>01 / PRECISION FARMING</span><span>DESIGNED FOR CLARITY ↗</span></div>
+  </div>
+</section>
+<section class="ticker"><div><span>✳</span> CROP INTELLIGENCE <span>✳</span> PRACTICAL TROUBLESHOOTING <span>✳</span> SAFER FIELD WORKFLOWS <span>✳</span> CROP INTELLIGENCE <span>✳</span> PRACTICAL TROUBLESHOOTING</div></section>
+<section class="section wrap">
+  <div class="section-top"><div><div class="eyebrow">YOUR FIELD TOOLKIT</div><h2>Less guesswork.<br><em>More understanding.</em></h2></div><p>Find a clear next step, whether you're learning a concept or troubleshooting a system.</p></div>
+  <div class="feature-grid">
+    <a class="feature-card feature-green" href="/faq"><div class="feature-top"><span class="feature-number">01 / KNOWLEDGE</span><span class="feature-arrow">↗</span></div><div class="feature-symbol">⌕</div><h3>Knowledge base</h3><p>Practical answers to common questions about computer vision, datasets, precision weeding, and field safety.</p><span class="feature-link">Browse FAQs <b>→</b></span><div class="card-orb"></div></a>
+    <a class="feature-card feature-cream" href="/errors"><div class="feature-top"><span class="feature-number">02 / TROUBLESHOOTING</span><span class="feature-arrow">↗</span></div><div class="feature-symbol">⌘</div><h3>Error library</h3><p>Understand what went wrong, why it happened, and the practical steps to get back on track.</p><span class="feature-link">Explore error codes <b>→</b></span><div class="card-orb"></div></a>
+    <button class="feature-card feature-dark" data-open-chat><div class="feature-top"><span class="feature-number">03 / ASSISTANCE</span><span class="feature-arrow">↗</span></div><div class="feature-symbol">✳</div><h3>Agri AI assistant</h3><p>Ask in your own words. Get FAQ-grounded guidance or raise a support ticket if the answer isn't available.</p><span class="feature-link">Start a conversation <b>→</b></span><div class="card-orb"></div></button>
+  </div>
+</section>
+<section class="quote-band"><div class="quote-mark">“</div><blockquote>Technology is most useful when it turns a complicated problem into a clear next step.</blockquote><span>THE AGRITECH PRINCIPLE / 001</span></section>
+<section class="section wrap bottom-cta"><div><div class="eyebrow">NEED A HAND?</div><h2>Let's solve the<br><em>next field problem.</em></h2></div><div><p>Start with the knowledge base, search the error library, or ask the assistant to point you in the right direction.</p><button class="btn btn-primary" data-open-chat>Talk to Agri AI <span>↗</span></button></div></section>
+{% endblock %}
